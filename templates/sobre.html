@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a codificação de caracteres como UTF-8 e configura a escala inicial para dispositivos móveis -->
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- Fornece polifill para recursos JavaScript ausentes em navegadores mais antigos -->
+
+    <!----((CSS Style))---->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Link para um arquivo de estilo CSS personalizado -->
+
+    <!----((CSS only))---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Link para o arquivo de estilo CSS do framework Bootstrap -->
+
+    <!----((JavaScript Bundle with Popper))---->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- Inclui o JavaScript do Bootstrap, que inclui o Popper.js para recursos de interação -->
+
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <!-- Inclui a biblioteca Font Awesome para ícones e elementos visuais -->
+
+    <title>SOBRE-NOS</title>
+
+</head>
+
+<body>
+    <header>
+
+        <!----((NavBar))---->
+
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="TecnologyWay™">
+                </a>
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false"
+                    aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" id="home-menu" href="{{ url_for('index') }}">Home</a>
+                        <a class="nav-item nav-link" id="sobre-menu" href="{{ url_for('sobre') }}">Sobre Nós</a>
+                        <a class="nav-item nav-link" id="contato-menu" href="{{ url_for('contato') }}">Contato</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid" style="padding-left: 0; padding-right: 0;"></div>
+
+        <!----((Sobre Nós))---->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="main-title">Nosso Produto</h3>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/sobrenosimg67.png') }}"
+                        alt="QUIZ + IA + EDUCAÇÃO">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="about-title">MakingQUIZ</h3><br>
+                    <p>Nossa plataforma educacional avança na vanguarda da tecnologia, impulsionada pelo
+                        PyTorch, um poderoso framework de aprendizado de máquina. Por meio dessa tecnologia,
+                        criamos algoritmos adaptativos que oferecem uma experiência de aprendizado personalizada
+                        para cada aluno. A flexibilidade do PyTorch nos permite moldar o ensino de maneira
+                        dinâmica, atendendo às necessidades individuais de aprendizagem.</p><br>
+
+                    <p>Além disso, implementamos algoritmos de análise de dados com Pandas, aprofundando nossa
+                        abordagem educacional. Essa integração nos permite compreender de forma abrangente e
+                        multidimensional o desempenho dos alunos. Não se trata apenas de avaliar resultados, mas
+                        de mergulhar no processo de aprendizagem. Esses algoritmos fornecem um feedback
+                        detalhado, identificando lacunas de conhecimento e oferecendo orientações personalizadas
+                        para o aprimoramento dos estudantes.</p><br>
+
+                    <p>Nossa infraestrutura é suportada por um banco de dados MySQL de alta performance,
+                        projetado para gerenciar eficientemente grandes volumes de dados. Isso viabiliza a
+                        geração de relatórios analíticos detalhados sobre o desempenho dos alunos. Os relatórios
+                        não se limitam a medir a performance, mas oferecem análises profundas e diagnósticos
+                        precisos, fornecendo insights valiosos tanto para professores quanto para alunos,
+                        possibilitando uma compreensão mais ampla e aprimoramento contínuo.</p><br>
+
+                    <p>Serviços fornecidos pelo nosso Software:</p><br>
+                    <ul id="about-list">
+                        <li><i class="fas fa-check"></i>Quiz educacional com inteligência artificial.</li>
+                        <hr>
+                        <li><i class="fas fa-check"></i>Análise detalhada dos resultados dos alunos.</li>
+                        <hr>
+                        <li><i class="fas fa-check"></i>Geração de relatórios personalizados de desempenho.</li>
+                        <hr>
+                        <li><i class="fas fa-check"></i>Avaliação adaptativa para um ensino mais eficaz.</li>
+                        <hr>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+
+        <!----((Copyright))---->
+
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright 2023 © - TecnologyWay™</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!----((Link JavaScript))---->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
