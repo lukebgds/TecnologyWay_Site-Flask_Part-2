@@ -9,11 +9,6 @@ Este é um projeto que visa criar um site simples utilizando Flask, um framework
 O projeto segue a seguinte estrutura de pastas:
 ```
 seu_projeto/
-    app.py
-    database.py
-    models.py
-    .flaskenv
-    Procfile
     templates/
         index.html
         sobre.html
@@ -91,7 +86,20 @@ Contém a configuração e inicialização do SQLAlchemy, que é uma biblioteca 
 
 ## Uso do Flask-Migrate
 
-#### Inicialização e Criação de Migração
+### Migrações em Bancos de Dados
+
+Em desenvolvimento de software, especialmente quando lidamos com bancos de dados, migrações são alterações na estrutura ou no esquema do banco de dados ao longo do tempo. Essas alterações podem incluir a adição de novas tabelas, a modificação de colunas existentes, a exclusão de tabelas ou até mesmo a criação de relacionamentos entre tabelas.
+
+Quando um aplicativo está em desenvolvimento contínuo, as alterações na estrutura do banco de dados são inevitáveis. Gerenciar essas mudanças de forma eficiente e controlada é fundamental para manter a integridade dos dados e evitar problemas durante o processo de atualização ou implantação.
+
+### Flask-Migrate e Gerenciamento de Migrações
+
+O Flask-Migrate é uma extensão do Flask que simplifica e automatiza o processo de criação, aplicação e gerenciamento de migrações em um banco de dados SQLAlchemy. Ele oferece um conjunto de comandos que permitem criar migrações a partir de alterações no modelo de dados, aplicar essas migrações ao banco de dados e reverter migrações, se necessário.
+
+Ao usar o Flask-Migrate, as migrações são representadas como arquivos Python que descrevem as alterações a serem aplicadas no banco de dados. Isso proporciona um método estruturado para versionar as mudanças no esquema do banco de dados, facilitando o controle e a aplicação consistente dessas alterações em diferentes ambientes.
+
+### Inicialização e Criação de Migração
+Agora que entendemos o conceito de migrações em bancos de dados e sua importância, vamos explorar como o Flask-Migrate simplifica o gerenciamento dessas migrações em um projeto Flask
 
 Para começar a utilizar o Flask-Migrate, os seguintes comandos devem ser executados para inicializar e criar a primeira migração:
 
