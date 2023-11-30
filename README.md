@@ -1,4 +1,4 @@
-# Documentação Detalhada
+# Documentação Detalhada - Mini Tutorial
 
 ## Introdução
 
