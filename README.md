@@ -68,21 +68,33 @@ O arquivo [`Procfile`](https://github.com/lukebgds/TecnologyWay_Python-Flask/blo
 
 #### Rotas
 
-`app.py` define as rotas, que são URLs específicas que a aplicação responde. Cada rota pode estar associada a uma função que renderiza um template HTML ou executa uma ação específica.
+O arquivo `app.py` é crucial para a definição das rotas da aplicação. Essas rotas são URLs específicas que a aplicação Flask responde. Em cada rota, é possível associar uma função que renderiza um template HTML correspondente ou executa uma ação específica, como processar dados de um formulário ou interagir com o banco de dados.
 
 #### Lógica para Inscrição de Usuários
 
-Além das rotas, `app.py` pode conter a lógica para lidar com a inscrição de usuários. Por exemplo, um método `POST`, um HTTP verb para criar um novo recurso no servidor(BD) com dados fornecidos, que recebe e processa dados de um formulário de inscrição na página HTML
+Além de mapear as rotas, `app.py` pode conter a lógica para lidar com a inscrição de usuários. Isso geralmente inclui a implementação de um método `POST` que recebe dados de um formulário de inscrição HTML. Esses dados são processados, validados e, se válidos, são armazenados no banco de dados. 
+
+No código fornecido, a lógica para inscrição de usuários inclui:
+
+- Validação do formato do e-mail usando a função `validate_email()` de uma biblioteca externa.
+- Verificação do domínio do e-mail para garantir que seja válido, consultando registros MX usando a biblioteca `dns.resolver`.
+- Interatividade com o banco de dados através do SQLAlchemy (`db`), verificando se o e-mail já está cadastrado e adicionando-o se não estiver.
+
+Esses pontos demonstram como o `app.py` pode ser usado não apenas para definir rotas, mas também para implementar ações específicas com base nas requisições dos usuários, como a inscrição no exemplo fornecido.
 
 ### `database.py` e `models.py`
 
 #### `database.py`
 
-Contém a configuração e inicialização do SQLAlchemy, que é uma biblioteca de ORM (Object-Relational Mapping) usada para interagir com o banco de dados.
+O arquivo `database.py` geralmente abriga a configuração inicial do SQLAlchemy. Essa configuração pode incluir a criação de uma instância do SQLAlchemy (`db`) e a definição de parâmetros cruciais, como a conexão com o banco de dados, configurações do pool de conexões, entre outros. O SQLAlchemy é uma biblioteca ORM poderosa que simplifica a interação com bancos de dados relacionais por meio de objetos Python.
 
 #### `models.py`
 
-É onde você define a estrutura das tabelas do banco de dados utilizando SQLAlchemy, criando os modelos de dados e suas relações.
+No arquivo `models.py`, você define os modelos de dados para sua aplicação. Esses modelos são representações das tabelas do banco de dados como classes em Python, onde cada atributo da classe corresponde a uma coluna na tabela. Além disso, é nesse arquivo que você estabelece os relacionamentos entre diferentes tabelas, como chaves estrangeiras e associações.
+
+Por exemplo, você pode ter classes representando entidades específicas, como `Usuário`, `Produto` ou `Pedido`, e definir seus atributos correspondentes, como nome, ID ou descrição. Além disso, é onde você pode usar as funcionalidades do SQLAlchemy para criar relações entre essas entidades, como um `Pedido` que está associado a um `Usuário` ou que contém vários `Produtos`.
+
+Os arquivos `database.py` e `models.py` trabalham em conjunto para permitir a criação de estruturas de dados flexíveis e bem organizadas, que são refletidas no banco de dados através do SQLAlchemy.
 
 ## Uso do Flask-Migrate
 
@@ -103,11 +115,19 @@ Agora que entendemos o conceito de migrações em bancos de dados e sua importâ
 
 Para começar a utilizar o Flask-Migrate, os seguintes comandos devem ser executados para inicializar e criar a primeira migração:
 
+Inicialização, cria a pasta `migrations/`:
 ```bash
-flask db init  # Inicializa a estrutura de migração
-flask db migrate -m "Nome da migração"  # Cria uma nova migração
-flask db upgrade  # Aplica a migração ao banco de dados 
+flask db init
 ```
+Criação de migrações, Cria o Banco de Dados ou o altera:
+```bash
+flask db migrate -m "Nome da migração"
+```
+Aplica a migração(modificações) ao banco de dados:
+ ```bash
+flask db upgrade
+```
+
 Esses comandos ajudam a gerenciar as migrações do banco de dados, refletindo as alterações no esquema do banco de dados de maneira controlada e organizada
 
 ## Estruturas Geradas
