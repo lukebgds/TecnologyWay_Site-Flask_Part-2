@@ -60,7 +60,7 @@ O arquivo [`.flaskenv`](https://github.com/lukebgds/TecnologyWay_Python-Flask/bl
 
 ### `Procfile`
 
-O arquivo [`Procfile`](https://github.com/lukebgds/TecnologyWay_Python-Flask/blob/main/Procfile) é crucial para a implantação do aplicativo no Heroku. Ele especifica o processo web a ser executado usando Gunicorn para garantir a correta execução da aplicação no ambiente de hospedagem. 
+O arquivo [`Procfile`](https://github.com/lukebgds/TecnologyWay_Python-Flask/blob/main/Procfile) é crucial para a implantação do aplicativo em sites de hospedagem. Ele especifica o processo web a ser executado usando Gunicorn para garantir a correta execução da aplicação no ambiente de hospedagem. 
 
 ## Funcionalidades Principais
 
@@ -72,7 +72,7 @@ O arquivo [`Procfile`](https://github.com/lukebgds/TecnologyWay_Python-Flask/blo
 
 #### Lógica para Inscrição de Usuários
 
-Além das rotas, `app.py` pode conter a lógica para lidar com a inscrição de usuários. Por exemplo, um método `POST` para receber e processar dados de um formulário de inscrição.
+Além das rotas, `app.py` pode conter a lógica para lidar com a inscrição de usuários. Por exemplo, um método `POST`, um HTTP verb para criar um novo recurso no servidor(BD) com dados fornecidos, que recebe e processa dados de um formulário de inscrição na página HTML
 
 ### `database.py` e `models.py`
 
