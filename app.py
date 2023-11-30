@@ -5,13 +5,15 @@ from models import Inscritos  # Importa o modelo de dados Inscritos
 from database import db  # Importa a instância do SQLAlchemy
 from flask_migrate import Migrate  # Importa a extensão Flask-Migrate para migrações de banco de dados
 import dns.resolver  # Importa a biblioteca para resolução de DNS
+import os
 
 # Configuração inicial da aplicação Flask
 app = Flask(__name__)  # Inicializa a aplicação Flask
+conexao = 'sqlite:///' + os.path.join(app.root_path, 'BD_SITE.sqlite')
 app.config['SECRET_KEY'] = 'minha chave'  # Define a chave secreta para segurança
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///BD_SITE.sqlite'  # Configura o banco de dados SQLite
+app.config['SQLALCHEMY_DATABASE_URI'] = conexao
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # Desabilita o rastreamento de modificações no SQLAlchemy
-db.init_app(app)  # Inicializa a aplicação Flask com o SQLAlchemy
+db.init_app(app) # Inicializa a aplicação Flask com o SQLAlchemy
 migrate = Migrate(app, db)  # Configura a extensão Flask-Migrate para gerenciar migrações
 
 # Função para validar o formato do e-mail
