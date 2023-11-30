@@ -110,17 +110,27 @@ flask db upgrade  # Aplica a migração ao banco de dados
 ```
 Esses comandos ajudam a gerenciar as migrações do banco de dados, refletindo as alterações no esquema do banco de dados de maneira controlada e organizada
 
-## Estrutura de Diretórios Gerados
+## Estruturas Geradas
 
-Após a inicialização e criação das migrações, o Flask-Migrate cria dois diretórios adicionais no seu projeto:
+Após a inicialização e criação das migrações, o Flask-Migrate cria estruturas adicionais no seu projeto:
 
 ### `migrations/`
 
-O diretório `migrations/` armazena todos os arquivos relacionados às migrações do banco de dados. Isso inclui os arquivos de migração Python, responsáveis por descrever as alterações no esquema do banco de dados.
+O diretório `migrations/` armazena os arquivos relacionados às migrações do banco de dados. Esses arquivos descrevem as alterações no esquema do banco de dados.
 
-### `instance/`
+- **`versions/`**: Contém os arquivos de migração Python gerados pelo Flask-Migrate. Cada arquivo descreve uma migração específica, incluindo operações como criação de tabelas, adição ou remoção de colunas, entre outras.
 
-O diretório `instance/` é usado para armazenar dados sensíveis ou específicos de uma instância do aplicativo. É comum armazenar chaves secretas ou configurações específicas que não devem ser versionadas no controle de código fonte.
+Outros arquivos e pastas importantes dentro de `migrations/` incluem:
+
+- `README`: Instruções ou informações adicionais sobre as migrações.
+- `alembic.ini`: Arquivo de configuração para o Alembic, usado pelo Flask-Migrate.
+- `env.py`: Arquivo Python para a configuração do ambiente de migração.
+- `script.py.mako`: Modelo de script usado para gerar os arquivos de migração.
+- `pycache/`: Pasta que pode conter arquivos temporários gerados pelo Python.
+
+### `O próprio Banco de Dados`
+
+O banco de dados em si é criado ou alterado conforme as migrações são aplicadas. Dependendo do banco de dados e das configurações, o Flask-Migrate aplica as migrações ao banco de dados especificado, refletindo as alterações descritas nos arquivos de migração no esquema real do banco de dados.
 
 ## Gerenciamento de Pacotes Python
 
@@ -164,7 +174,7 @@ Werkzeug==3.0.1
 ```
 seu_projeto/
     migrations/
-    instance/
+    BD_SITE.sqlite
     static/
         css/
             style.css
