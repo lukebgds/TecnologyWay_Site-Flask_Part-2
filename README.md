@@ -117,7 +117,7 @@ Para começar a utilizar o Flask-Migrate, os seguintes comandos devem ser execut
 
 Inicialização, cria a pasta `migrations/`:
 ```bash
-flask db init
+flask db init # Só é preciso uma vez, para criar a pasta
 ```
 Criação de migrações, Cria o Banco de Dados ou o altera:
 ```bash
