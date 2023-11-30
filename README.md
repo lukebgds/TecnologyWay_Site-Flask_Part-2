@@ -83,11 +83,11 @@ Além das rotas, `app.py` pode conter a lógica para lidar com a inscrição de 
 
 #### `database.py`
 
-Esse arquivo geralmente contém a configuração e inicialização do SQLAlchemy, que é uma biblioteca de ORM (Object-Relational Mapping) usada para interagir com o banco de dados.
+Contém a configuração e inicialização do SQLAlchemy, que é uma biblioteca de ORM (Object-Relational Mapping) usada para interagir com o banco de dados.
 
 #### `models.py`
 
-`models.py` é onde você define a estrutura das tabelas do banco de dados utilizando SQLAlchemy, criando os modelos de dados e suas relações.
+É onde você define a estrutura das tabelas do banco de dados utilizando SQLAlchemy, criando os modelos de dados e suas relações.
 
 ## Uso do Flask-Migrate
 
