@@ -135,6 +135,31 @@ O `requirements.txt` é um arquivo de texto que contém uma lista dos pacotes Py
 ```bash
 pip freeze > requirements.txt
 ```
+Conteudo:
+```bash
+﻿alembic==1.12.1
+blinker==1.7.0
+click==8.1.7
+colorama==0.4.6
+dnspython==2.4.2
+Flask==3.0.0
+Flask-DotEnv==0.1.2
+Flask-Migrate==4.0.5
+Flask-Script==2.0.6
+Flask-SQLAlchemy==3.1.1
+greenlet==3.0.1
+gunicorn==21.2.0
+itsdangerous==2.1.2
+Jinja2==3.1.2
+Mako==1.3.0
+MarkupSafe==2.1.3
+packaging==23.2
+python-dotenv==1.0.0
+SQLAlchemy==2.0.23
+typing_extensions==4.8.0
+validate-email-address==1
+Werkzeug==3.0.1
+```
 ## Estrutura de Arquivos do Projeto Finalizada:
 ```
 seu_projeto/
