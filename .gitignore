@@ -1,0 +1,9 @@
+# Default ignored files
+# Arquivos gerados automaticamente
+__pycache__/
+*.pyc
+
+# Arquivos de configuração local
+.env
+instance/
+.idea/
