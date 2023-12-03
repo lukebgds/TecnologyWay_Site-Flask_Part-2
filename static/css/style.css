@@ -53,12 +53,12 @@ header,
 
 #navbar-links a {
   color: #FFD700;
-  padding: 10px 15px;
+  padding: 10px 22px;
   transition: color 0.3s ease;
 }
 
 #navbar-links a:hover {
-  color: #333333;
+  color: #0077FF;
 }
 
 #home-menu:hover,
@@ -190,6 +190,7 @@ header,
 }
 
 
+
 /*-----((Serviços))-----*/
 
 .service-box {
@@ -211,7 +212,7 @@ header,
 }
 
 .service-box:hover p {
-  transform: translateY(-5px);
+  transform: translateY(-7px);
 }
 
 .service-box i {
@@ -304,11 +305,11 @@ header,
 }
 
 .contact-box:hover i {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .contact-box:hover p {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 

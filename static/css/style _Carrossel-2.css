@@ -1,0 +1,48 @@
+/* Estilos para a seção de Depoimentos */
+.testimonial-section {
+  text-align: center;
+}
+
+.testimonial-title {
+  color: #d83a00;
+  margin-bottom: 30px;
+
+  color: #d83a00;
+  font-size: 30px;
+  text-align: center;
+}
+
+.testimonial-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15%;
+  margin-top: 10px;
+  left: 42.5%;
+  border-top: 2px solid #d83a00;
+}
+
+.testimonial-item {
+  background-color: #eeeaea;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+.testimonial-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.testimonial-item span {
+  font-style: italic;
+  font-size: 14px;
+  color: #888;
+}
+
+.btn-custom i {
+  color: black;
+  border: none;
+}
