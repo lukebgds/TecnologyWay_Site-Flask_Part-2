@@ -11,6 +11,7 @@
 
     <!----((CSS Style))---->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style _Carrossel-2.css') }}">
     <!-- Link para um arquivo de estilo CSS personalizado -->
 
     <!----((CSS only))---->
@@ -48,9 +49,12 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" id="home-menu" href="{{ url_for('index') }}">Home</a>
-                        <a class="nav-item nav-link" id="sobre-menu" href="{{ url_for('sobre') }}">Sobre Nós</a>
-                        <a class="nav-item nav-link" id="contato-menu" href="{{ url_for('contato') }}">Contato</a>
+                        <a class="nav-item nav-link" id="home-menu" href="{{ url_for('index') }}"><i
+                                class="fas fa-home fa-lg"></i>Home</a>
+                        <a class="nav-item nav-link" id="sobre-menu" href="{{ url_for('sobre') }}"><i
+                                class="fas fa-book fa-lg"></i>Sobre Nós</a>
+                        <a class="nav-item nav-link" id="contato-menu" href="{{ url_for('contato') }}"><i
+                                class="fas fa-phone fa-lg"></i>Contato</a>
                     </div>
                 </div>
             </nav>
@@ -104,6 +108,42 @@
                         <hr>
                     </ul>
                 </div>
+
+                <!----((Seção de Depoimentos))---->
+
+                <section class="testimonial-section">
+                    <div class="container">
+                        <h3 class="testimonial-title">Depoimentos</h3>
+                        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="testimonial-item">
+                                        <p>Melhor Site do Planeta, Design Brilhante.</p>
+                                        <span>Rhyan Carlos da silva Lima</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-item">
+                                        <p>Foi um gênio quem fez isso? Porque parece!</p>
+                                        <span>Diogo josé do Nascimento silva</span>
+                                    </div>
+                                </div>
+                                <!-- Adicione mais depoimentos conforme necessário -->
+                            </div>
+                            <button class="carousel-control-prev btn-custom" type="button"
+                                data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                <i class="fas fa-chevron-left"></i>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next btn-custom" type="button"
+                                data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
         </div>
