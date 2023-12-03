@@ -1,12 +1,12 @@
 /* Estilos para a seção de Depoimentos */
+
 .testimonial-section {
   text-align: center;
 }
 
 .testimonial-title {
   color: #d83a00;
-  margin-bottom: 30px;
-
+  margin-bottom: 45px;
   color: #d83a00;
   font-size: 30px;
   text-align: center;
@@ -32,13 +32,14 @@
 }
 
 .testimonial-item p {
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .testimonial-item span {
   font-style: italic;
-  font-size: 14px;
+  font-size: 15px;
   color: #888;
 }
 
