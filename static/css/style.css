@@ -239,12 +239,12 @@ header,
 }
 
 .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 13px 23px rgba(0, 0, 0, 0.5);
 }
 
 .card img {
