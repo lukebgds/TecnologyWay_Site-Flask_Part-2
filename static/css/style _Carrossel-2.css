@@ -2,6 +2,7 @@
 
 .testimonial-section {
   text-align: center;
+  background-color: rgb(243, 247, 248);
 }
 
 .testimonial-title {
@@ -19,11 +20,11 @@
   width: 15%;
   margin-top: 10px;
   left: 42.5%;
-  border-top: 2px solid #d83a00;
+  border-top: 1px solid #d83a00;
 }
 
 .testimonial-item {
-  background-color: #eeeaea;
+  background-color: #dddcdc;
   padding: 20px;
   border-radius: 8px;
   margin: 0 auto;
@@ -32,18 +33,19 @@
 }
 
 .testimonial-item p {
-  font-size: 17px;
-  margin-bottom: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .testimonial-item span {
   font-style: italic;
-  font-size: 15px;
-  color: #888;
+  font-size: 16px;
+  color: #d83a00;
 }
 
 .btn-custom i {
-  color: black;
+  color: #FFD700;
   border: none;
 }
