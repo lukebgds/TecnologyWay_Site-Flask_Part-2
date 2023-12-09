@@ -232,10 +232,6 @@ Fique à vontade para explorar e utilizar este projeto como base para desenvolvi
 
 Idealizador, criador e desenvolvedor deste projeto.
 
-Todos os direitos reservados:
-
-[![Licença](https://img.shields.io/badge/Licença-MIT-blue)](https://github.com/lukebgds/TecnologyWay_Python-Flask/blob/main/LICENSE)
-
 ---
 
 #### [Voltar ao topo](https://github.com/lukebgds/TecnologyWay_Python-Flask#documenta%C3%A7%C3%A3o-detalhada---mini-tutorial)
