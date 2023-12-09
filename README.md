@@ -238,7 +238,7 @@ Fique à vontade para explorar e utilizar este projeto como base para desenvolvi
 
 Idealizador, criador e desenvolvedor deste projeto.
 
-``Todos os direitos reservados``
+``Todos os Direitos Reservados``
 
 ---
 
