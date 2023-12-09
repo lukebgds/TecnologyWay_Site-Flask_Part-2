@@ -232,6 +232,8 @@ Fique à vontade para explorar e utilizar este projeto como base para desenvolvi
 
 Idealizador, criador e desenvolvedor deste projeto.
 
+``Todos os direitos reservados``
+
 ---
 
 #### [Voltar ao topo](https://github.com/lukebgds/TecnologyWay_Python-Flask#documenta%C3%A7%C3%A3o-detalhada---mini-tutorial)
