@@ -170,7 +170,7 @@ O `pip` é uma ferramenta para instalar e gerenciar pacotes Python. O comando `p
 
 #### Criação do `requirements.txt`
 
-O `requirements.txt` é um arquivo de texto que contém uma lista dos pacotes Python instalados em um ambiente virtual. Ele é frequentemente utilizado para compartilhar e reproduzir um ambiente Python específico. Para criar um `requirements.txt`, basta executar o comando:
+O  [`requirements.txt`](https://github.com/lukebgds/TecnologyWay_Site-Flask_Part-2/blob/main/requirements.txt) é um arquivo de texto que contém uma lista dos pacotes Python instalados em um ambiente virtual. Ele é frequentemente utilizado para compartilhar e reproduzir um ambiente Python específico. Para criar um `requirements.txt`, basta executar o comando:
 
 ```bash
 pip freeze > requirements.txt
