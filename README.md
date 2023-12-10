@@ -58,7 +58,7 @@ A pasta `static/` armazena arquivos estáticos utilizados para estilização e i
 
 ### `app.py`
 
-[`app.py`](#TecnologyWay_Python-Flask/blob/main/app.py) é o arquivo principal da aplicação, onde são definidas as rotas e a lógica principal do aplicativo. Nele, são mapeadas as URLs para funções específicas que renderizam as páginas ou processam dados. 
+[`app.py`](https://github.com/lukebgds/TecnologyWay_Site-Flask_Part-2/blob/main/app.py) é o arquivo principal da aplicação, onde são definidas as rotas e a lógica principal do aplicativo. Nele, são mapeadas as URLs para funções específicas que renderizam as páginas ou processam dados. 
 
 ### `database.py` e `models.py`
 
@@ -146,7 +146,7 @@ Após a inicialização e criação das migrações, o Flask-Migrate cria estrut
 
 ### `migrations/`
 
-O diretório `migrations/` armazena os arquivos relacionados às migrações do banco de dados. Esses arquivos descrevem as alterações no esquema do banco de dados.
+O diretório [`migrations/`](https://github.com/lukebgds/TecnologyWay_Site-Flask_Part-2/tree/main/migrations) armazena os arquivos relacionados às migrações do banco de dados. Esses arquivos descrevem as alterações no esquema do banco de dados.
 
 - **`versions/`**: Contém os arquivos de migração Python gerados pelo Flask-Migrate. Cada arquivo descreve uma migração específica, incluindo operações como criação de tabelas, adição ou remoção de colunas, entre outras.
 
