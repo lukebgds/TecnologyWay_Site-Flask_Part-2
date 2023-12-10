@@ -10,6 +10,10 @@ Ao seguir as instruções detalhadas abaixo, você terá a oportunidade não ape
 
 Este repositório foi desenvolvido para fornecer os recursos e orientações necessárias para compreender e aplicar os recursos robustos oferecidos pelo Flask no desenvolvimento de um website. Prepare-se para mergulhar na criação de um site dinâmico e funcional com Flask, culminando com seu lançamento na nuvem através do Heroku.
 
+### Recomendação da IDE: PyCharm
+
+Durante o desenvolvimento do projeto, recomendo o uso do PyCharm como a IDE (Integrated Development Environment) para trabalhar com o Flask e Python de forma eficiente e produtiva.
+
 ## Estrutura de Pastas
 
 O projeto segue a seguinte estrutura de pastas:
@@ -242,4 +246,4 @@ Idealizador, criador e desenvolvedor deste projeto.
 
 ---
 
-#### [Voltar ao topo](https://github.com/lukebgds/TecnologyWay_Site-Flask_Part-2?tab=readme-ov-file#site_flask---guia-pr%C3%A1ticopart-2-implementa%C3%A7%C3%A3o-do-framework-flask-com-deployheroku)
+#### [Voltar ao topo](#site_flask---guia-pr%C3%A1ticopart-2-implementa%C3%A7%C3%A3o-do-framework-flask-com-deployheroku)
