@@ -54,7 +54,7 @@ A pasta `static/` armazena arquivos estáticos utilizados para estilização e i
 
 ### `app.py`
 
-Este é o arquivo principal da aplicação, onde são definidas as rotas e a lógica principal do aplicativo. Nele, são mapeadas as URLs para funções específicas que renderizam as páginas ou processam dados. [Veja aqui](https://github.com/lukebgds/TecnologyWay_Python-Flask/blob/main/app.py)
+[`app.py`](https://github.com/lukebgds/TecnologyWay_Python-Flask/blob/main/app.py) é o arquivo principal da aplicação, onde são definidas as rotas e a lógica principal do aplicativo. Nele, são mapeadas as URLs para funções específicas que renderizam as páginas ou processam dados. 
 
 ### `database.py` e `models.py`
 
