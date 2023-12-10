@@ -242,4 +242,4 @@ Idealizador, criador e desenvolvedor deste projeto.
 
 ---
 
-#### [Voltar ao topo](https://github.com/lukebgds/TecnologyWay_Python-Flask#documenta%C3%A7%C3%A3o-detalhada---mini-tutorial)
+#### [Voltar ao topo](https://github.com/lukebgds/TecnologyWay_Site-Flask_Part-2?tab=readme-ov-file#site_flask---guia-pr%C3%A1ticopart-2-implementa%C3%A7%C3%A3o-do-framework-flask-com-deployheroku)
