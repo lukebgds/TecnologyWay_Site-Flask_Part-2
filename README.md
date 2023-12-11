@@ -200,6 +200,13 @@ typing_extensions==4.8.0
 validate-email-address==1
 Werkzeug==3.0.1
 ```
+
+### Observação importante:
+
+Para realizar o deploy desta aplicação no Heroku, é essencial incluir o arquivo `requirements.txt`. Esse arquivo contém as dependências necessárias para o correto funcionamento da aplicação quando hospedada no Heroku.
+
+Certifique-se de manter o arquivo `requirements.txt` atualizado com todas as bibliotecas e suas versões necessárias.
+
 ## Estrutura de Arquivos do Projeto Finalizada:
 ```
 seu_projeto/
