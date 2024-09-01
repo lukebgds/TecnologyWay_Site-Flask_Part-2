@@ -1,4 +1,4 @@
-# Site_Flask - Guia Prático(Part-2): Implementação do Framework Flask, com Deploy(Heroku)
+# Site_Flask - Guia Prático(Parte-2): Implementação do Framework Flask, com Deploy(Heroku)
 
 ## Introdução
 
