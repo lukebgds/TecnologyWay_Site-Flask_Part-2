@@ -239,8 +239,6 @@ Com a organização de diretórios para armazenamento de templates HTML, arquivo
 
 A utilização do `requirements.txt` para documentar os pacotes Python instalados, juntamente com uma breve explicação sobre a sua criação por meio do comando `pip freeze`, oferece uma maneira padronizada de compartilhar o ambiente de desenvolvimento e garantir a reprodução consistente do projeto em diferentes ambientes.
 
-Agradecimentos especiais aos consultores **[Eduardo Negri e Rodin Sarmento]** por contribuirem com esse projeto.
-
 Fique à vontade para explorar e utilizar este projeto como base para desenvolvimentos futuros!
 
 ## Autor
