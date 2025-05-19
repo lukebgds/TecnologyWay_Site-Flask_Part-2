@@ -248,7 +248,3 @@ Fique à vontade para explorar e utilizar este projeto como base para desenvolvi
 Idealizador, criador e desenvolvedor deste projeto.
 
 ``Todos os Direitos Reservados``
-
----
-
-#### [Voltar ao topo](#site_flask---guia-pr%C3%A1ticopart-2-implementa%C3%A7%C3%A3o-do-framework-flask-com-deployheroku)
