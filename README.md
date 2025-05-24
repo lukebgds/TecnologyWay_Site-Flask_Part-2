@@ -241,7 +241,9 @@ A utilização do `requirements.txt` para documentar os pacotes Python instalado
 
 Fique à vontade para explorar e utilizar este projeto como base para desenvolvimentos futuros!
 
-## Autor
+---
+
+### Autor
 
 **Lucas Benício Gusmão da Silva**
 
